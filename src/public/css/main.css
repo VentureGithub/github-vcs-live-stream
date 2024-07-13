@@ -1,0 +1,272 @@
+*{
+	margin: 0%;
+}
+
+.logo-name{
+  font-size: 30px;
+  color:#fff
+}
+
+.logo{
+  display: flex;
+	/* justify-content: center; */
+	align-items: center;
+  /* margin-bottom: 20px; */
+  /* margin: 0%; */
+  height: 80px;
+  width:100vw;
+  border-bottom:2px solid #c7ecf8;
+  background: linear-gradient(to right, #3777CE, #072F55);
+  /* opacity: 0.5px; */
+
+}
+
+@media (min-width:300px)and (max-width:427px){
+  .logo{
+    width: 430px;
+  }
+}
+
+.admin-streaming{
+  height: 250px;
+  width: 100%;
+}
+.live-streaming{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  /* height: 100px;  */
+}
+
+.video {
+  position: relative;
+  /* image:url(/public/image/Maths_Mama_Logo.png); */
+  /* transform: scaleX(-1); Flip horizontally (optional) */
+  display: flex;
+  height: 100%; /* Full viewport height */
+  width: 100%; /* Full viewport width */
+  justify-content: center;
+  margin-top: 10px;
+  /* align-items: center; */
+}
+
+@media (min-width:300px) and (max-width:430px){
+  .video{
+    width: 430px;
+  }
+}
+
+#videoRecording{
+  max-width: 100%;
+  height: 400px;
+  /* width: 100%; */
+} 
+
+#chat-input{
+  border: 1px solid #5c85c1;
+  /* background-color: white; */
+  background-color: #fff;
+  color: black;
+}
+
+
+.video-section {
+  position: relative;
+  /* transform: scaleX(-1); Flip horizontally (optional) */
+  display: flex;
+  height: 100%; /* Full viewport height */
+  width: 100%; /* Full viewport width */
+  justify-content: center;
+  margin-top: 10px;
+}
+@media (min-width:300px) and (max-width:430px){
+  .video-section{
+    width: 430px;
+  }
+}
+
+.controls {
+  position: absolute;
+  top: 0.5em;
+  right: 1em;
+}
+
+#videoplayer {
+  max-width: 100%;
+  height: 400px;
+}
+
+
+#chat-input {
+  flex: 3;
+  margin-bottom: 0;
+  margin-left: 10px;
+  width: 220px;
+  height: 30px;
+  border-radius: 5px;
+  padding-left: 4px;
+} 
+
+.chat-section{
+  border-radius: 2px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 10px;
+  /* margin-bottom: 10px; */
+  order: 1;
+  height: 400px;
+  width: 430px;
+  /* background: linear-gradient(to right, #3777CE, #072F55); */
+  background-color: #F1F1F1;
+  color: black;
+  /* text-wrap:wrap; */
+  word-break: break-all;
+  /* box-shadow: 10px; */
+}
+
+.messages {
+  margin-right: 15px;
+  height: 17em;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
+  scrollbar-color: transparent transparent; 
+  /* background-color: red; */
+  /* text-wrap:wrap; */
+}
+
+.message-list{
+  margin: 15px;
+}
+
+.btn{
+  color: #fff;
+  border: none;
+  flex: 3;
+  margin-bottom: 0;
+  width: 57px;
+  height: 35px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #3777CE, #072F55);
+  cursor: pointer;
+}
+
+  .logo-img{
+	height: 90px;
+	width: 90px;
+  } 
+
+
+  @media screen and (max-width: 768px) {
+    .live-streaming {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+    
+    .chat-section {
+      max-width: none;
+      flex-direction: row; /* Remove maximum width for better responsiveness */
+    }
+  }
+
+  .accordion {
+    width: 100%;
+    /* max-width: 600px; */
+    margin: 0 auto;
+    
+    border-radius: 10px;
+}
+
+@media (min-width:768px) and (max-width:800px){
+  .chat-section{
+    width:250px;
+    height: auto;
+  }
+  .video{ 
+    width: 500px ;
+  }
+  .video-section{
+    width: 500px ;
+  }
+}
+.accordion-header {
+  color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    background: linear-gradient(to right, #3777CE, #072F55);
+    border-bottom: 1px solid #ccc;
+}
+.accordion-content {
+    padding: 15px;
+    display: none;
+    /* background-color: ; */
+}
+.accordion-content.show {
+    display: block;
+}
+
+#sound{
+  color: #fff;
+  border: none;
+  height: 30px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #3777CE, #072F55);
+}
+
+
+
+
+.logo-img1{
+  display: block;
+  margin: 0 auto;
+  height: 90px;
+  width: 90px;
+}
+
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #3777CE;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+
+/* Adjust padding and margins for form elements */
+.login{
+  width: 800px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+.login-form {
+  /* max-width: 500px; */
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .login-form {
+    padding: 15px;
+  }
+  .logo-img1 {
+    max-width: 150px; /* Adjust logo size for smaller screens */
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    background-size: contain; /* Adjust background size for larger screens */
+  }
+}
+
